@@ -1,0 +1,165 @@
+html {
+  height: 100%;
+}
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: darkslategray;
+}
+
+.body {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.big-box {
+  background-color: darkcyan;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.join-box {
+  display: flex;
+}
+
+button {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+input {
+  outline: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+#error-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+}
+
+.error-el {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 4rem;
+  background-color: indianred;
+  color: white;
+}
+
+.chatbox {
+  bottom: 1rem;
+  right: 1rem;
+  position: absolute;
+  width: max-content;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+#message-space {
+  padding: 0.5rem;
+  overflow: auto;
+  max-width: 20rem;
+  max-height: 20rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  background-color: darkcyan;
+}
+
+.message-entity {
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 0;
+  background-color: aliceblue;
+  padding: 0.5rem;
+}
+
+.own-message {
+  align-items: end;
+}
+
+.author {
+  font-size: small;
+  font-weight: bold;
+  color: darkcyan;
+}
+
+p {
+  margin: 0;
+}
+
+#hud {
+  background-color: darkcyan;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: white;
+}
+
+.centerize {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bingoBoard {
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: aquamarine;
+  display: grid;
+  column-gap: 0.25rem;
+  row-gap: 0.25rem;
+  grid-template-columns: repeat(5, 2.25rem);
+}
+
+#bingoBox > p {
+  margin: 0;
+}
+
+.bingoBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  border-style: groove;
+}
+
+.bingoBox:hover {
+  background-color: azure;
+}
+
+.marked {
+  background-color: chartreuse;
+}
+
+#gameMessages {
+  margin: 2rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: darkcyan;
+  color: white;
+  font-size: x-large;
+  border-radius: 1rem;
+}

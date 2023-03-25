@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lessgooo Bingooo!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <div id="hud">
+        <!-- hud -->
+      </div>
+      <div id="gameMessages">Start game to play!</div>
+      <div class="centerize">
+        <div id="bingoBoard">
+          <!-- bingo board -->
+        </div>
+      </div>
+      <div class="centerize">
+        <button id="startGameButton">Start</button>
+      </div>
+      <div class="chatbox">
+        <div id="message-space"></div>
+        <form id="chatInputForm">
+          <input id="chatTextInput" placeholder="Type to send" type="text" />
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <div id="error-box"></div>
+    <script src="util.js"></script>
+    <script src="play.js"></script>
+  </body>
+</html>
