@@ -1,26 +1,7 @@
-// let ws = new WebSocket("ws://localhost:8000/create");
-
-// ws.onopen = () => {
-//   ws.send(JSON.stringify({ username: "jivan" }));
-// };
-
-// ws.onmessage = (msg) => {
-//   console.log(msg);
-// };
-
-// let sendButton = document.getElementById("sendButton");
-
-// sendButton.onclick = () => {
-//   let testString = document.getElementById("testString").value;
-//   console.log("sending: ", testString);
-//   ws.send(JSON.stringify({ move: testString }));
-// };
-
-const SERVER_URI = "http://localhost:8000";
+const SERVER_URI = window.location.origin;
 
 const createRoomButton = document.getElementById("createRoomButton");
 createRoomButton.onclick = async () => {
-  console.log("sup");
   const username = document.getElementById("usernameInput").value;
   if (username === "") {
     displayError("Username must be provided!");

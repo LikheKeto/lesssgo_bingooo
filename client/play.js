@@ -5,7 +5,8 @@ if (!username || !roomID) {
   window.location.href = "/?invalid=true";
 }
 
-const WS_SERVER_URI = "ws://localhost:8000";
+const WS_SERVER_URI = "ws://" + window.location.host;
+
 let GAME_RUNNING = false;
 
 const ws = new WebSocket(WS_SERVER_URI + "/join");
