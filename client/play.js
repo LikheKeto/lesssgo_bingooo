@@ -5,7 +5,7 @@ if (!username || !roomID) {
   window.location.href = "/?invalid=true";
 }
 
-const WS_SERVER_URI = "ws://" + window.location.host;
+const WS_SERVER_URI = "wss://" + window.location.host;
 
 let GAME_RUNNING = false;
 
